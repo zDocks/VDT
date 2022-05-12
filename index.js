@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
     res.render(`${__dirname}/views/index.ejs`);
 });
 
-app.listen(80, () => {
+app.listen(8080, () => {
     console.log('Application listening on port 80!');
 });
 
