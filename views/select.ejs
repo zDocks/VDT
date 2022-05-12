@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Val do Txuba - E Learning
+    </title>
+    <link href="img/VALDOTXUBA.png" rel="icon">
+    <link href="img/VALDOTXUBA.png" rel="apple-touch-icon">
+
+    <style>
+        @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+        /*styling background*/
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            font-family: sans-serif;
+        }
+
+        /* styling the button*/
+        .bt {
+            padding: 20px 20px;
+            display: inline-block;
+            color: #47b2e4;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 3em;
+            overflow: hidden;
+
+        }
+
+        /*creating animation effect*/
+        .bt:hover {
+            color: #fff;
+            background: #73c5eb;
+            box-shadow: 0 0 50px #5995b1;
+            border-radius: 12px 12px 12px 12px;
+        }
+
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .error-msg {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 3px 3px 3px 3px;
+            margin-left: auto;
+        }
+
+        .error-msg {
+            color: #D8000C;
+            background-color: #FFBABA;
+        }
+
+        .center {
+            position: absolute;
+            top: 1px;
+            width: 50%;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+
+    
+
+</head>
+
+<body>
+
+
+    <div class="topright">
+        <!--<img src "data:image/png;base64, img " alt="Foto Perfil" />-->
+        <br>
+        <br>
+        <br>
+        <%- user.nome %>
+            <br>
+            <%- user.perm %>
+                <br>
+    </div>
+
+    <%- include('bar') -%>
+
+    <section class="home">
+        <div class="text" style="text-align: center;padding: 24%;">Bem Vindo á plataforma da Val do Txuba!<br>By: TGEIO20</div>
+    </section>
+</body>
+
+</html>
